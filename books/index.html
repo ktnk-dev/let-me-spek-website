@@ -5,42 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let me speak!</title>
-    <link rel="stylesheet" href="../css/tab.css">
+    <link rel="stylesheet" href="/css/tab.css">
+    <link rel="stylesheet" href="/css/header.css">
     <style>
         body{
+            overflow-x: hidden;
             margin: 0;
             background: #eee;
 
         }
-        .header{
-            overflow-x: auto;
+       
+        .main {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .audio-table{
+            flex-direction: row;
 
             display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow-x: none;
-            width: 100%;
-            height: 300px;
-            background-image: url("https://wallpapertops.com/walldb/original/9/5/7/639456.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
+            flex-wrap: wrap;
+            width: 44%;
+            background: linear-gradient(0deg,#eee,#fff);
+            border-style: solid;
+            border-width: 2px;
+            border-color: #222;
+            border-radius: 8px 8px 0 0;
+            margin: 5px 10px;
         }
-        h1{
-            margin: 0;
-            padding: 0;
+        @media only screen and (max-device-width: 700px) {
+            .audio-table{
+                width: 100%;
+            }
         }
-
-        .title_text{
-            text-shadow: #000 20px 0px 30px;       
-            padding: 5px 20px;
-            border-radius: 5px;
-            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-            font-weight: 800;
+        .audio-table__title{
             color: white;
+            border-radius: 3px 3px 0 0;
+
+            background-color: #222;
+            width: 100%;
+            padding: 5px 10px 0;
+            height: 28px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            
+        }
+        .audio-table__list{
+            width: 100%;
+            
+            
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .audio-table__item{
+            background: linear-gradient(0deg,#eee,#fff);
+            /* width: 100%; */
+            padding-left:5px;
+            
+            min-height: 40px;
+            height: auto;
+            
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
 
         }
-       
+
+        .audio-table__name{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: 100;
+            font-size: 15px;
+            padding: 2px 0;
+
+        }
+        
+        .audio-table__link{
+            
+            font-family: Arial;
+            font-weight: 100;
+            text-align: end;
+
+            text-decoration: none;
+        }
+        .download{
+            
+            padding: 4px 10px 0;
+            
+            height: 18px;
+            width: 18px;
+        }
+
+
+
+        .separator{
+            width: 100%;
+            margin-top: 10px;
+
+        }
+        .s_title{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            margin: 0;padding: 0;
+            padding: 0 15px;
+        }
+        .s_line {
+            width: 100%;
+            height: 0;
+
+        }
+        
+
     </style>
 
 </head>
@@ -48,10 +125,11 @@
 
     <header>
         <ul class="tabs">
-            <li class="tab" onclick="window.location='../'" >Главная</li>
-            <li class="tab" onclick="window.location='../books/'" id="tab_active">Материал</li>
-            <li class="tab" onclick="window.location='../games/'">Игры</li>
-            <li class="tab" onclick="window.location='../tasks/'">Задания</li>
+            <li class="tab" onclick="window.location='/'">Главная</li>
+            <li class="tab" onclick="window.location='/videos/'">Видео</li>
+            <li class="tab" onclick="window.location='/any/'">Материал</li>
+            <li class="tab" onclick="window.location='/books/'" id="tab_active">Учебники</li>
+            <li class="tab" onclick="window.location='/tasks/'">Задания</li>
         </ul>
     </header>
     <div class="header">
@@ -60,14 +138,118 @@
             <h1 class="title_text">
                 Let me speak
             </h1>
-            
-            
+            <p class="title_desc">
+                Персональный сайт учителя английского языка <br> Лилит Миграни Кочарян
+            </p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="separator">
+            <h1 class="s_title">
+                Учебники для 5-9 класса
+            </h1>
+            <hr class="s_line">
+        </div>
+
+        <div class="audio-table">
+            <div class="audio-table__title">5 класс</div>
+            <div class="audio-table__list">
+            <div class="audio-table__item">
+             <div class="audio-table__name">Аудиокурс к учебнику</div>
+             <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/bf3c97d4-da98-11e0-acba-001018890642.iso" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+            </div>
+            <div class="audio-table__item">
+             <div class="audio-table__name">Контрольные задания</div>
+             <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/70e5cae9-7310-11dc-bc9b-00304874af64.zip" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+            </div>
+            </div>
+            </div>
+        <div class="audio-table">
+            <div class="audio-table__title">6 класс</div>
+            <div class="audio-table__list">
+            <div class="audio-table__item">
+            <div class="audio-table__name">Аудиокурс к учебнику</div>
+            <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/635aa768-d3b4-11e0-acba-001018890642.iso" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+            </div>
+            <div class="audio-table__item">
+            <div class="audio-table__name">Контрольные задания</div>
+            <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/2074c63e-b246-11de-a0e7-0019b9f502d2.zip" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+            </div>
+            </div>
+        </div>
+        <div class="audio-table">
+                <div class="audio-table__title">7 класс</div>
+                <div class="audio-table__list">
+                <div class="audio-table__item">
+                <div class="audio-table__name">Аудиокурс к учебнику</div>
+                <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/62f21f8b-ee6c-11e0-b948-001018890642.iso" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                </div>
+                <div class="audio-table__item">
+                <div class="audio-table__name">Контрольные задания</div>
+                <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/0d4664d1-4934-11db-9da7-00304874af64.zip" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                </div>
+                </div>
+        </div>
+                <div class="audio-table">
+                        <div class="audio-table__title">8 класс</div>
+                        <div class="audio-table__list">
+                        <div class="audio-table__item">
+                        <div class="audio-table__name">Аудиокурс к учебнику</div>
+                        <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/bd1c1646-ee46-11e0-b948-001018890642.iso" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                        </div>
+                        <div class="audio-table__item">
+                        <div class="audio-table__name">Подготовка к итоговой аттестации</div>
+                        <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/0102597f-77b4-11dc-bc9b-00304874af64.zip" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                        </div>
+                        
+                        </div>
+                        </div><div class="audio-table">
+                            <div class="audio-table__title">9 класс</div>
+                            <div class="audio-table__list">
+                            <div class="audio-table__item">
+                            <div class="audio-table__name">Аудиокурс к учебнику</div>
+                            <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/14f73cca-208c-11e1-b339-0050569c12da.iso" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                            </div>
+                            <div class="audio-table__item">
+                            <div class="audio-table__name">Подготовка к итоговой аттестации</div>
+                            <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/235a1387-a80c-11e6-ba0b-0050569c7d18.zip" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                            </div>
+                            </div>
+                            </div>
+                            
+<div class="audio-table" style="display: hidden; border:0; background: rgba(0,0,0,0); height: 1px;"></div>
+                            
+    <div class="main">
+        <div class="separator">
+            <h1 class="s_title">
+                Учебники для 10-11 класса
+            </h1>
+            <hr class="s_line">
+        </div>                         
+                            
+                            
+                            
+    <div class="audio-table">
+        <div class="audio-table__title">10 класс</div>
+        <div class="audio-table__list">
+        <div class="audio-table__item">
+        <div class="audio-table__name">Аудиокурс к учебнику</div>
+        <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/4637ee66-0c1a-11e1-9718-001018890642.zip" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
         </div>
         
+        </div>
+        </div><div class="audio-table">
+            <div class="audio-table__title">11 класс</div>
+            <div class="audio-table__list">
+            <div class="audio-table__item">
+            <div class="audio-table__name">Аудиокурс к учебнику</div>
+            <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/4637ee74-0c1a-11e1-9718-001018890642.zip" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+            </div>
+            
+            </div>
+            </div>
     </div>
-    <div class="main">
-        
-    </div>
-    
+
 </body>
 </html>

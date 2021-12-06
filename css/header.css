@@ -1,0 +1,30 @@
+.header{
+    overflow-x: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: none;
+    width: 100%;
+    height: 290px;
+    background-image: url("https://wallpapertops.com/walldb/original/9/5/7/639456.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+h1{
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.title_text{
+    text-shadow: #000 20px 0px 30px;       
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+
+
+}
