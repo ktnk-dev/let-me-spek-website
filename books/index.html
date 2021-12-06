@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/css/header.css">
     <style>
         body{
-            overflow-x: hidden;
+            /* overflow-x:hidden; */
             margin: 0;
             background: #eee;
 
@@ -26,15 +26,15 @@
 
             display: flex;
             flex-wrap: wrap;
-            width: 44%;
+            width: 46%;
             background: linear-gradient(0deg,#eee,#fff);
             border-style: solid;
             border-width: 2px;
             border-color: #222;
             border-radius: 8px 8px 0 0;
-            margin: 5px 10px;
+            margin: 5px 12px;
         }
-        @media only screen and (max-device-width: 700px) {
+        @media(max-width: 700px) {
             .audio-table{
                 width: 100%;
             }
@@ -102,7 +102,7 @@
 
 
         .separator{
-            width: 100%;
+            width: 99%;
             margin-top: 10px;
 
         }
@@ -110,6 +110,7 @@
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
             margin: 0;padding: 0;
             padding: 0 15px;
+            font-size: 25px;
         }
         .s_line {
             width: 100%;
@@ -126,10 +127,10 @@
     <header>
         <ul class="tabs">
             <li class="tab" onclick="window.location='/'">Главная</li>
-            <li class="tab" onclick="window.location='/videos/'">Видео</li>
-            <li class="tab" onclick="window.location='/any/'">Материал</li>
             <li class="tab" onclick="window.location='/books/'" id="tab_active">Учебники</li>
             <li class="tab" onclick="window.location='/tasks/'">Задания</li>
+            <li class="tab" onclick="window.location='/any/'">Материал</li>
+            <li class="tab" onclick="window.location='/videos/'">Видео</li>
         </ul>
     </header>
     <div class="header">
@@ -147,7 +148,7 @@
     <div class="main">
         <div class="separator">
             <h1 class="s_title">
-                Учебники для 5-9 класса
+                Учебники для 5-11 класса
             </h1>
             <hr class="s_line">
         </div>
@@ -155,6 +156,14 @@
         <div class="audio-table">
             <div class="audio-table__title">5 класс</div>
             <div class="audio-table__list">
+                <div class="audio-table__item">
+                    <div class="audio-table__name">Учебник</div>
+                        <a class="audio-table__link audio-table__link--download" target="_blank" href="http://uchebniki.net/engine/download.php?id=562" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                    </div>
+                    <div class="audio-table__item">
+                        <div class="audio-table__name">Рабочая тетрадь</div>
+                            <a class="audio-table__link audio-table__link--download" target="_blank" href="http://uchebniki.net/engine/download.php?id=1230"  rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                        </div>
             <div class="audio-table__item">
              <div class="audio-table__name">Аудиокурс к учебнику</div>
              <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/bf3c97d4-da98-11e0-acba-001018890642.iso" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
@@ -168,6 +177,15 @@
         <div class="audio-table">
             <div class="audio-table__title">6 класс</div>
             <div class="audio-table__list">
+
+                <div class="audio-table__item">
+                    <div class="audio-table__name">Учебник</div>
+                        <a class="audio-table__link audio-table__link--download" target="_blank" href="http://uchebniki.net/engine/download.php?id=550" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                    </div>
+                    <div class="audio-table__item">
+                        <div class="audio-table__name">Рабочая тетрадь</div>
+                            <a class="audio-table__link audio-table__link--download" target="_blank" href="https://cdn.discordapp.com/attachments/917341410334748692/917344460487163925/6_.pdf"  rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                        </div>
             <div class="audio-table__item">
             <div class="audio-table__name">Аудиокурс к учебнику</div>
             <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/635aa768-d3b4-11e0-acba-001018890642.iso" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
@@ -181,6 +199,15 @@
         <div class="audio-table">
                 <div class="audio-table__title">7 класс</div>
                 <div class="audio-table__list">
+
+                <div class="audio-table__item">
+                    <div class="audio-table__name">Учебник</div>
+                        <a class="audio-table__link audio-table__link--download" target="_blank" href="http://uchebniki.net/engine/download.php?id=602" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                    </div>
+                    <div class="audio-table__item">
+                        <div class="audio-table__name">Рабочая тетрадь</div>
+                            <a class="audio-table__link audio-table__link--download" target="_blank" href="https://cdn.discordapp.com/attachments/917341410334748692/917344461493780531/7_.pdf"  rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                        </div>
                 <div class="audio-table__item">
                 <div class="audio-table__name">Аудиокурс к учебнику</div>
                 <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/62f21f8b-ee6c-11e0-b948-001018890642.iso" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
@@ -194,6 +221,15 @@
                 <div class="audio-table">
                         <div class="audio-table__title">8 класс</div>
                         <div class="audio-table__list">
+
+                <div class="audio-table__item">
+                    <div class="audio-table__name">Учебник</div>
+                        <a class="audio-table__link audio-table__link--download" target="_blank" href="http://uchebniki.net/engine/download.php?id=612" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                    </div>
+                    <div class="audio-table__item">
+                        <div class="audio-table__name">Рабочая тетрадь</div>
+                            <a class="audio-table__link audio-table__link--download" target="_blank" href="https://cdn.discordapp.com/attachments/917341410334748692/917345414951342110/8_.pdf"  rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                        </div>
                         <div class="audio-table__item">
                         <div class="audio-table__name">Аудиокурс к учебнику</div>
                         <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/bd1c1646-ee46-11e0-b948-001018890642.iso" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
@@ -207,19 +243,55 @@
                         </div><div class="audio-table">
                             <div class="audio-table__title">9 класс</div>
                             <div class="audio-table__list">
-                            <div class="audio-table__item">
-                            <div class="audio-table__name">Аудиокурс к учебнику</div>
-                            <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/14f73cca-208c-11e1-b339-0050569c12da.iso" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
-                            </div>
-                            <div class="audio-table__item">
-                            <div class="audio-table__name">Подготовка к итоговой аттестации</div>
-                            <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/235a1387-a80c-11e6-ba0b-0050569c7d18.zip" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
-                            </div>
-                            </div>
-                            </div>
+                                <div class="audio-table__item">
+                                    <div class="audio-table__name">Учебник</div>
+                                        <a class="audio-table__link audio-table__link--download" target="_blank" href="http://uchebniki.net/engine/download.php?id=552" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                                    </div>
+                                    <div class="audio-table__item">
+                                        <div class="audio-table__name">Рабочая тетрадь</div>
+                                            <a class="audio-table__link audio-table__link--download" target="_blank" href="https://cdn.discordapp.com/attachments/917341410334748692/917345416146739260/9_.pdf" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                                        </div>
+                                <div class="audio-table__item">
+                                    <div class="audio-table__name">Аудиокурс к учебнику</div>
+                                        <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/14f73cca-208c-11e1-b339-0050569c12da.iso" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                                    </div>
+                                <div class="audio-table__item">
+                                    <div class="audio-table__name">Подготовка к итоговой аттестации</div>
+                                        <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/235a1387-a80c-11e6-ba0b-0050569c7d18.zip" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                                    </div>
+                        </div>
                             
-<div class="audio-table" style="display: hidden; border:0; background: rgba(0,0,0,0); height: 1px;"></div>
+                    </div>
+                    <!-- http://uchebniki.net/engine/download.php?id=562 -->
+                        <!-- https://s.11klasov.net/index.php?do=download&id=11631 -->
                             
+                        
+                        <div class="audio-table">
+                        <div class="audio-table__title">10-11 класс</div>
+                        <div class="audio-table__list">
+                        <div class="audio-table__item">
+                        <div class="audio-table__name">Учебник (10-11)</div>
+                        <a class="audio-table__link audio-table__link--download" target="_blank" href="http://uchebniki.net/engine/download.php?id=588" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                        </div> <div class="audio-table__item">
+                            <div class="audio-table__name">Рабочая тетрадь (10-11)</div>
+                                <a class="audio-table__link audio-table__link--download" target="_blank" href="https://cdn.discordapp.com/attachments/917341410334748692/917346664530993192/10-11.pdf"  rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                            </div>
+                        <div class="audio-table__item">
+                        <div class="audio-table__name">Аудиокурс к учебнику 10 класса</div>
+                        <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/4637ee66-0c1a-11e1-9718-001018890642.zip" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                        </div>
+                        <div class="audio-table__item">
+                        <div class="audio-table__name">Аудиокурс к учебнику 11 класса</div>
+                        <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/4637ee74-0c1a-11e1-9718-001018890642.zip" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                        </div>
+                        
+                        </div>
+                        </div>
+<!-- <div class="audio-table" style="display: hidden; border:0; background: rgba(0,0,0,0); height: 1px;"></div>
+     
+
+
+
     <div class="main">
         <div class="separator">
             <h1 class="s_title">
@@ -229,27 +301,7 @@
         </div>                         
                             
                             
-                            
-    <div class="audio-table">
-        <div class="audio-table__title">10 класс</div>
-        <div class="audio-table__list">
-        <div class="audio-table__item">
-        <div class="audio-table__name">Аудиокурс к учебнику</div>
-        <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/4637ee66-0c1a-11e1-9718-001018890642.zip" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
-        </div>
-        
-        </div>
-        </div><div class="audio-table">
-            <div class="audio-table__title">11 класс</div>
-            <div class="audio-table__list">
-            <div class="audio-table__item">
-            <div class="audio-table__name">Аудиокурс к учебнику</div>
-            <a class="audio-table__link audio-table__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/4637ee74-0c1a-11e1-9718-001018890642.zip" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
-            </div>
-            
-            </div>
-            </div>
-    </div>
+    </div> -->
 
 </body>
 </html>

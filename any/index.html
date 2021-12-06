@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let me speak!</title>
+    <link rel="stylesheet" href="/css/tab.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <style>
+        body{
+            margin: 0;
+            background: #eee;
+            overflow-x: hidden;
+        }
+        
+        .ege{
+            margin: 10px 10px;
+            height: 190px;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .e_data{
+            display: flex;
+            flex-direction: row;
+            border: solid 3px #222;
+
+        }
+        .e_info{
+            width: 78%;
+            background: linear-gradient(270deg, #eee, #fff);
+
+        }
+        .e_title{
+            display: flex;
+            align-items: center;
+            border-radius: 7px 7px 0 0;
+            padding:  3px 20px;
+            padding-top: 7px;
+            font-size: 20px;
+            height: 20px;
+            
+            margin: 0;
+            background-color: #222;
+            color: white;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            align-items: center;
+        }
+        .e_list{
+            width: 22%;
+            height: 160px;
+            flex-direction: column;
+            background-color: #ddd;
+            overflow-y: auto;
+        }
+        .e_item{
+            height: 30px;
+            background: linear-gradient(90deg, #eee, #fff);
+            border-left: solid 3px #222;
+
+        }
+        .e_item:hover{
+            background: #ccc;
+        }
+        .ed{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-decoration: none;
+            padding: 0 5px;
+            text-align: center;
+            vertical-align: middle;
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <ul class="tabs">
+            <li class="tab" onclick="window.location='/'" >Главная</li>
+            <li class="tab" onclick="window.location='/books/'">Учебники</li>
+            <li class="tab" onclick="window.location='/tasks/'">Задания</li>
+            <li class="tab" onclick="window.location='/any/'" id="tab_active">Материал</li>
+            <li class="tab" onclick="window.location='/videos/'">Видео</li>
+        </ul>        
+    </header><div class="header">
+
+        <div class="title">
+            <h1 class="title_text">
+                Let me speak
+            </h1>
+            <p class="title_desc">
+                Персональный сайт учителя английского языка <br> Лилит Миграни Кочарян
+            </p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="ege">
+            <h1 class="e_title">
+                ЕГЭ
+            </h1>
+            <div class="e_data">
+            <div class="e_info">
+                <p class="e_desc">
+                    Это важный экзамен и прочая мишура, тут вы можете скачать тестовые задания
+                </p>
+
+            </div>
+            <div class="e_list">
+                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
+                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
+                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
+                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
+                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
+                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
+                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
+                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
+                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
+                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
+                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
+                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
+                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
+                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
+                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
+                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
+                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
+
+            </div>
+            </div>
+        </div>
+
+        
+    </div>
+</body>
+</html>
