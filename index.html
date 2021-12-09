@@ -11,11 +11,65 @@
         body{
             margin: 0;
             background: #eee;
+            z-index: 1;
 
+        } .main {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         
-        
+        .media_scroll{
+            display: flex;
+            height: 500px;
+            flex-wrap: nowrap;
+            width: 100%;
+            overflow-x: auto;
+            /* background-color: #000; */
+            transition: all .3s;
 
+        }
+        .media{
+            z-index: 1;
+            height: 300px;
+            transition: all .3s;
+
+            /* margin: 0 0px; */
+        }
+        .media_scroll:hover{
+            height: 500px;
+        }
+        .media:hover{
+            height: 500px;
+        }
+        
+        .separator{
+            width: 99%;
+            margin-top: 10px;
+
+        }
+        .s_title{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            margin: 0;padding: 0;
+            padding: 0 15px;
+            font-size: 25px;
+            /* color:; */
+        }
+        .s_line {
+            width: 100%;
+            height: 0;
+           color: #333 ;
+
+        }
+
+        .atext{
+            
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-align: left;
+            width: 93%;
+        }
+      
 
     </style>
 
@@ -43,6 +97,48 @@
         </div>
     </div>
 
-    <div class="main"></div>
+    <div class="main">
+<div class="separator">
+            <h1 class="s_title">
+Обо мне            </h1>
+            <hr class="s_line">
+        </div>
+
+        <p class="atext">Im a teacher of the English language. <br>
+
+        The place of work: Novorossiysk, Gymnasium 20.<br>  The education: The Pedagogical University of Vanadzore
+        </p>
+
+
+
+
+
+
+
+
+        <div class="separator">
+            <h1 class="s_title">
+                 Наша гордость
+            </h1>
+            <hr class="s_line">
+        </div>
+
+
+
+        <div class="media_scroll">
+            <img src="https://media.discordapp.net/attachments/917341410334748692/918436561396310056/IMG_20181222_102737_HDR.jpg" alt="" class="media">
+            <img src="https://media.discordapp.net/attachments/917341410334748692/918436561920618526/Scan30001.JPG" alt="" class="media">
+            <img src="https://media.discordapp.net/attachments/917341410334748692/918436562314887218/Scan30002.JPG" alt="" class="media">
+            <img src="https://media.discordapp.net/attachments/917341410334748692/918436801360846858/image0.jpg" alt="" class="media">
+            <img src="https://media.discordapp.net/attachments/917341410334748692/918436801599901706/image1.jpg" alt="" class="media">
+            <img src="https://media.discordapp.net/attachments/917341410334748692/918436801834811403/image2.jpg" style=" transform: scale(-1);" alt="" class="media">
+            <img src="https://media.discordapp.net/attachments/917341410334748692/918441588466798622/image0.jpg" style="" alt="" class="media">
+            <img src="https://media.discordapp.net/attachments/917341410334748692/918441588714270730/image1.jpg" alt="" class="media">
+            <img src="https://media.discordapp.net/attachments/917341410334748692/918441588915580958/image2.jpg" alt="" class="media">
+
+        </div>
+
+        <div class="" style="height: 400px; background-color: rgba(0,0,0,0);"></div>
+    </div>
 </body>
 </html>
