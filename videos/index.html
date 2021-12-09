@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let me speak!</title>
+    <link rel="stylesheet" href="/css/tab.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <style>
+        body{
+            margin: 0;
+            background: #222;
+
+        }
+        .main {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .separator{
+            width: 99%;
+            margin-top: 10px;
+
+        }
+        .s_title{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            margin: 0;padding: 0;
+            padding: 0 15px;
+            font-size: 25px;
+            color: white;
+        }
+        .s_line {
+            width: 100%;
+            height: 0;
+           color: #333 ;
+
+        }
+        
+        
+        .video_scroll{
+            display: flex;
+            height: auto;
+            flex-wrap: nowrap;
+            width: 100%;
+            overflow-x: auto;
+            background-color: #000;
+
+        }
+        .video{
+            /* margin: 0 0px; */
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <ul class="tabs">
+            <li class="tab" onclick="window.location='/'">Главная</li>
+            <li class="tab" onclick="window.location='/books/'">Учебники</li>
+            <li class="tab" onclick="window.location='/tasks/'">Задания</li>
+            <li class="tab" onclick="window.location='/any/'">Материал</li>
+            <li class="tab" onclick="window.location='/videos/'" id="tab_active">Видео</li>
+        </ul>        
+    </header>
+    <div class="header">
+
+        <div class="title">
+            <h1 class="title_text">
+                Let me speak
+            </h1>
+            <p class="title_desc">
+                Персональный сайт учителя английского языка <br> Лилит Миграни Кочарян
+            </p>
+        </div>
+    </div>
+
+    <div class="main">
+            <div class="separator">
+                <h1 class="s_title">
+                     About sport
+                </h1>
+                <hr class="s_line">
+            </div>
+        <div class="video_scroll">
+            <iframe src="https://youtube.com/embed/9Qr204yLaFg?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&" class="video" width="30%" height="340px" frameborder="0"></iframe>
+            <iframe src="https://youtube.com/embed/x99kOuldMp0?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&" class="video" width="30%" height="340px" frameborder="0"></iframe>
+            <iframe src="https://youtube.com/embed/EH5Ozkn9aFs?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&" class="video" width="30%" height="340px" frameborder="0"></iframe>
+            <iframe src="https://youtube.com/embed/g4kzfBJPsG4?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&" class="video" width="30%" height="340px" frameborder="0"></iframe>
+            <iframe src="https://youtube.com/embed/F3MVhCTXhHA?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&" class="video" width="30%" height="340px" frameborder="0"></iframe>
+            <iframe src="https://youtube.com/embed/nQIRTGUq2GA?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&" class="video" width="30%" height="340px" frameborder="0"></iframe>
+            <iframe src="https://youtube.com/embed/HsR26MiGoCE?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&" class="video" width="30%" height="340px" frameborder="0"></iframe>
+            <iframe src="https://youtube.com/embed/ANmdFKV3_dA?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&" class="video" width="30%" height="340px" frameborder="0"></iframe>
+        </div>
+
+        <div class="separator" style="height: 15px;"></div>
+
+            <div class="separator">
+                <h1 class="s_title">
+                     Just having fun
+                </h1>
+                <hr class="s_line">
+            </div>
+        <div class="video_scroll">
+            <iframe src="https://youtube.com/embed/N5fgKnOAEzE?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&" class="video" width="58%" height="200px" frameborder="0"></iframe>
+            <iframe src="https://youtube.com/embed/ioOfFa5dYmo?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&" class="video" width="58%" height="200px" frameborder="0"></iframe>
+
+        </div>
+    
+    </div>
+</body>
+</html>

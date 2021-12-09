@@ -64,7 +64,7 @@
             width: 20%;
             height: 160px;
             flex-direction: column;
-            background-color: #ddd;
+            background-color: linear-gradient(90deg, #eee, #fff);
             overflow-y: auto;
         }
         .e_item{
@@ -94,7 +94,23 @@
             width: 100%;
             height: 30px;
 
+        }.separator{
+            width: 99%;
+            margin-top: 10px;
+
         }
+        .s_title{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            margin: 0;padding: 0;
+            padding: 0 15px;
+            font-size: 25px;
+        }
+        .s_line {
+            width: 100%;
+            height: 0;
+
+        }
+        
 
 
     </style>
@@ -107,7 +123,7 @@
             <li class="tab" onclick="window.location='/books/'">Учебники</li>
             <li class="tab" onclick="window.location='/tasks/'">Задания</li>
             <li class="tab" onclick="window.location='/any/'" id="tab_active">Материал</li>
-            <!-- <li class="tab" onclick="window.location='/videos/'">Видео</li> -->
+            <li class="tab" onclick="window.location='/videos/'">Видео</li>
         </ul>        
     </header><div class="header">
 
@@ -122,7 +138,13 @@
     </div>
 
     <div class="main">
-        
+            <div class="separator">
+                <h1 class="s_title">
+                    Экзамены
+                </h1>
+                <hr class="s_line">
+            </div>
+    
 
         
         <div class="ege">
@@ -156,6 +178,47 @@
             </div>
         </div>
 
+        <div class="ege">
+            <h1 class="e_title">
+                ОГЭ
+            </h1>
+            <div class="e_data">
+            <div class="e_info">
+                <p class="e_desc">
+                    Данный экзамен сдается после 9-го класса, не пройдя его вы не получаете аттестат, он помогает поступить в техникум, колледж, или продолжить обучение в школе. Здесь вы можете перейти на интернет ресурс, где можно решить тестовые варианты
+                </p>
+    
+            </div>
+            <div class="e_list">
+                <div class="e_item"><a href="https://en-oge.sdamgia.ru/test?id=996035" class="ed">№ 1</a></div>
+                <div class="e_item"><a href="https://en-oge.sdamgia.ru/test?id=996036" class="ed">№ 2</a></div>
+                <div class="e_item"><a href="https://en-oge.sdamgia.ru/test?id=996037" class="ed">№ 3</a></div>
+                <div class="e_item"><a href="https://en-oge.sdamgia.ru/test?id=996038" class="ed">№ 4</a></div>
+                <div class="e_item"><a href="https://en-oge.sdamgia.ru/test?id=996039" class="ed">№ 5</a></div>
+                <div class="e_item"><a href="https://en-oge.sdamgia.ru/test?id=996040" class="ed">№ 6</a></div>
+                <div class="e_item"><a href="https://en-oge.sdamgia.ru/test?id=996041" class="ed">№ 7</a></div>
+                <div class="e_item"><a href="https://en-oge.sdamgia.ru/test?id=996042" class="ed">№ 8</a></div>
+                <div class="e_item"><a href="https://en-oge.sdamgia.ru/test?id=996043" class="ed">№ 9</a></div>
+                <div class="e_item"><a href="https://en-oge.sdamgia.ru/test?id=996044" class="ed">№ 10</a></div>
+                <div class="e_item"><a href="https://en-oge.sdamgia.ru/test?id=996045" class="ed">№ 11</a></div>
+                <div class="e_item"><a href="https://en-oge.sdamgia.ru/test?id=996046" class="ed">№ 12</a></div>
+                <div class="e_item"><a href="https://en-oge.sdamgia.ru/test?id=996047" class="ed">№ 13</a></div>
+                <div class="e_item"><a href="https://en-oge.sdamgia.ru/test?id=996048" class="ed">№ 14</a></div>
+                <div class="e_item"><a href="https://en-oge.sdamgia.ru/test?id=996049" class="ed">№ 15</a></div>
+
+                
+            </div>
+            </div>
+        </div>
+        
+
+
+        <div class="separator">
+            <h1 class="s_title">
+                Дополнительный материал
+            </h1>
+            <hr class="s_line">
+        </div>
         <div class="box">
             <div class="box__title">Grammarway</div>
             <div class="box__list">
