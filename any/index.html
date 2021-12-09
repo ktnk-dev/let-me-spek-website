@@ -7,20 +7,33 @@
     <title>Let me speak!</title>
     <link rel="stylesheet" href="/css/tab.css">
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/boxUI.css">
     <style>
         body{
             margin: 0;
             background: #eee;
             overflow-x: hidden;
         }
+        .main {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
         
         .ege{
-            margin: 10px 10px;
+            margin: 10px 12px;
             height: 190px;
             display: flex;
             flex-direction: column;
+            width: 91.4%;
 
         }
+        @media(max-width: 700px) {
+    .ege{
+        width: 100%;
+    }
+}
         .e_data{
             display: flex;
             flex-direction: row;
@@ -55,20 +68,31 @@
             overflow-y: auto;
         }
         .e_item{
+            display: flex;
+            
             height: 30px;
             background: linear-gradient(90deg, #eee, #fff);
             border-left: solid 3px #222;
-
+        }
+        .e_desc{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            padding: 0 15px;
         }
         .e_item:hover{
             background: #ccc;
         }
         .ed{
+            display: flex;
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
             text-decoration: none;
-            padding: 0 5px;
-            text-align: center;
+            color: black;
+            padding: 0px 5px;
+            /* text-align: ; */
+
             vertical-align: middle;
+            align-items: center;
+            width: 100%;
+            height: 30px;
 
         }
 
@@ -83,7 +107,7 @@
             <li class="tab" onclick="window.location='/books/'">Учебники</li>
             <li class="tab" onclick="window.location='/tasks/'">Задания</li>
             <li class="tab" onclick="window.location='/any/'" id="tab_active">Материал</li>
-            <li class="tab" onclick="window.location='/videos/'">Видео</li>
+            <!-- <li class="tab" onclick="window.location='/videos/'">Видео</li> -->
         </ul>        
     </header><div class="header">
 
@@ -98,6 +122,9 @@
     </div>
 
     <div class="main">
+        
+
+        
         <div class="ege">
             <h1 class="e_title">
                 ЕГЭ
@@ -105,34 +132,55 @@
             <div class="e_data">
             <div class="e_info">
                 <p class="e_desc">
-                    Это важный экзамен и прочая мишура, тут вы можете скачать тестовые задания
+                    Это важный экзамен, который определит ваше будущее. К ЕГЭ нужно долго готовится, но следует обратить внимание на тестовые варианты экзамена.  Здесь вы можете скачать некоторые из них
                 </p>
-
+    
             </div>
             <div class="e_list">
-                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
-                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
-                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
-                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
-                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
-                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
-                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
-                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
-                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
-                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
-                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
-                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
-                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
-                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
-                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
-                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
-                <div class="e_item"><a href="" class="ed">Вариант 4</a></div>
-
+                <div class="e_item"><a href="https://cdn.discordapp.com/attachments/917341410334748692/917341539313811456/170918__01.pdf" class="ed">Вариант 1</a></div>
+                <div class="e_item"><a href="https://cdn.discordapp.com/attachments/917341410334748692/917341539536085062/171016__03.pdf" class="ed">Вариант 3</a></div>
+                <div class="e_item"><a href="https://cdn.discordapp.com/attachments/917341410334748692/917341539808727080/171030_-_No4_.pdf" class="ed">Вариант 4</a></div>
+                <div class="e_item"><a href="https://cdn.discordapp.com/attachments/917341410334748692/917341540039397406/171211_-_No7_.pdf" class="ed">Вариант 7</a></div>
+                <div class="e_item"><a href="https://cdn.discordapp.com/attachments/917341410334748692/917341540261720064/180108_-_No9_.pdf" class="ed">Вариант 9</a></div>
+                <div class="e_item"><a href="https://cdn.discordapp.com/attachments/917341410334748692/917341603738296380/180122_-_No10_.pdf" class="ed">Вариант 10</a></div>
+                <div class="e_item"><a href="https://cdn.discordapp.com/attachments/917341410334748692/917341604010921994/180219_-_No12_.pdf" class="ed">Вариант 12</a></div>
+                <div class="e_item"><a href="https://cdn.discordapp.com/attachments/917341410334748692/917341604245819452/180305_-_No13_.pdf" class="ed">Вариант 13</a></div>
+                <div class="e_item"><a href="https://cdn.discordapp.com/attachments/917341410334748692/917341604501659668/180319_-_No14_.pdf" class="ed">Вариант 14</a></div>
+                <div class="e_item"><a href="https://cdn.discordapp.com/attachments/917341410334748692/917341604757516348/180402_-_No15_.pdf" class="ed">Вариант 15</a></div>
+                <div class="e_item"><a href="https://cdn.discordapp.com/attachments/917341410334748692/917341605017579560/180416_-_No16_.pdf" class="ed">Вариант 16</a></div>
+                <div class="e_item"><a href="https://cdn.discordapp.com/attachments/917341410334748692/917341647191294012/180514_-_No18_.pdf" class="ed">Вариант 18</a></div>
+                <div class="e_item"><a href="https://cdn.discordapp.com/attachments/917341410334748692/917341647451357184/180528_-_No19_.pdf" class="ed">Вариант 19</a></div>
+    
+                
             </div>
             </div>
         </div>
 
+        <div class="box">
+            <div class="box__title">Grammarway</div>
+            <div class="box__list">
+                <div class="box__item">
+                    <div class="box__name">Первый учебник</div>
+                    <a class="box__link box__link--download" target="_blank" href="http://uchebniki.net/engine/download.php?id=562" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                </div>
+                <div class="box__item">
+                    <div class="box__name">Второй учебник</div>
+                    <a class="box__link box__link--download" target="_blank" href="http://uchebniki.net/engine/download.php?id=1230"  rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                </div>
+                <div class="box__item">
+                    <div class="box__name">Третий учебник</div>
+                    <a class="box__link box__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/bf3c97d4-da98-11e0-acba-001018890642.iso" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                </div>
+                <div class="box__item">
+                    <div class="box__name">Четвертный учебниу</div>
+                    <a class="box__link box__link--download" target="_blank" href="https://catalog.prosv.ru/attachment/70e5cae9-7310-11dc-bc9b-00304874af64.zip" download="" rel="nofollow"><img class="download" src="https://cdn.discordapp.com/emojis/264184209617321984.png" alt="Загрузить"></a>
+                </div>
+            </div>
+        </div>
         
+        <div class="box" style="display: hidden; border:0; background: rgba(0,0,0,0); height: 1px;"></div>
+     
+
     </div>
 </body>
 </html>
